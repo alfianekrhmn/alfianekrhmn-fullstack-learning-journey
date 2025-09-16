@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Alfian Eka Rahman — mahasiswa Teknik Informatika di Universitas Pamulang yang sedang belajar Web Development." />
+    <meta name="author" content="Alfian Eka Rahman" />
+    <link rel="stylesheet" href="style.css">
+    <title>Semantic Website</title>
+</head>
+<body>
+    <header>
+        <h1>Alfian's Website</h1>
+        <nav aria-label="main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent">
+        <section  id="home" aria-labelledby="about-heading">
+            <h2 id="about-heading">Tentang Saya</h2>
+            <p>Saya adalah seorang mahasiswa Teknik Informatika di Universitas Pamulang. Saya sangat tertarik dengan dunia Web karena saya memiliki cita-cita sebagai Web Developer ketika saya sudah lulus nanti.</p>
+        </section>
+
+
+        <section id="articles" aria-labelledby="articles-heading">
+            <h2 id="articles-heading">Article</h2>
+            <article aria-labelledby="article1-1-heading">
+                <h3 id="article1-1-heading">Artikel 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est quis corporis, itaque quos quam? Officiis blanditiis excepturi, dolor animi quam incidunt perferendis optio harum odit dignissimos sequi atque alias!
+                </p>
+                <p>
+                    <time datetime="2025-09-16">2025-09-16</time>
+                </p>
+            </article>
+            <article aria-labelledby="article1-2-heading">
+                <h3 id="article1-2-heading">Artikel 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, itaque tempore ducimus dolorum eos, consequuntur quidem tenetur recusandae distinctio vero explicabo. Ullam voluptates consectetur non, nisi ipsam earum illo dolore.
+                </p>
+                <p>
+                    <time datetime="2025-09-16">2025-09-16</time>
+                </p>
+            </article>
+        </section>
+        
+        <aside aria-labelledby="hobby-heading">
+            <h2 id="hobi-heading">Hobi</h2>
+            <ol>
+                <li>Coding</li>
+                <li>Tidur</li>
+                <li>Jualan</li>
+            </ol>
+        </aside>
+    </main>
+
+    <footer id="contact" aria-labelledby="contactinfo-heading">
+        <address>
+            Author:  <strong>Alfian</strong><br />
+            Email: <a href="mailto:alfianekrhmn@example.com">alfianekrhmn@example.com</a>
+        </address>
+        <p>&copy; 2025 Alfian Eka Rahman</p>
+    </footer>
+</body>
+</html>
