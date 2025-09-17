@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    text-decoration: none;
+    gap: 30px;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: orange;
+    transition: 0.5s;
+}
+
+#home {
+    background-color: orangered;
+    padding-bottom: 30px;
+}
+
+#home h2 {
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 50px;
+}
+
+#home p {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-right: 50px;
+    color: white;
+}
+
+#articles {
+    background-color: lightseagreen;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#articles h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.articles-container {
+    display: flex;
+}
+
+#articles h3 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#articles p {
+    text-align: justify;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-right: 50px;
+    color: white;
+}
+
+aside {
+    background-color: lightsalmon;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+aside h2 {
+    margin-left: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+aside ol{
+    margin-left: 50px;
+    font-size: 15px;
+    margin-right: 50px;
+    color: white;
+}
+
+aside ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer address a {
+    color: white;
+    text-decoration: none;
+}
