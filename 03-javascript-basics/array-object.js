@@ -34,17 +34,39 @@ let produk = [
     {nama: "Indomie Rebus", harga: 80000, stok: 5},
     {nama: "Indomie Kuah", harga: 60000, stok: 8}
 ]
-const produkMapped = produk.map(produk => produk.nama)
-console.log(produkMapped)
+// const produkMapped = produk.map(produk => produk.nama)
+// console.log(produkMapped)
 
-const produkFilter = produk.filter(produk => produk.harga > 50000)
-console.log(produkFilter)
+// const produkFilter = produk.filter(produk => produk.harga > 50000)
+// console.log(produkFilter)
 
-const produkReduce = produk.reduce((acc, produk) => acc + produk.harga * produk.stok, 0)
-console.log(produkReduce)
+// const produkReduce = produk.reduce((acc, produk) => acc + produk.harga * produk.stok, 0)
+// console.log(produkReduce)
 
-const findProduk = produk.find(produk => produk.nama == "Indomie Kuah")
-console.log(findProduk)
+// const findProduk = produk.find(produk => produk.nama == "Indomie Kuah")
+// console.log(findProduk)
 
-const sortingProduk = [...produk].sort((a, b) => a.harga - b.harga)
-console.log(sortingProduk)
+// const sortingProduk = [...produk].sort((a, b) => a.harga - b.harga)
+// console.log(sortingProduk)
+
+const transaksi = [
+    { id: 1, nama: "Laptop", harga: 7000000, jumlah: 2, kategori: "Elektronik" },
+    { id: 2, nama: "Headphone", harga: 1500000, jumlah: 1, kategori: "Elektronik" },
+    { id: 3, nama: "Buku JavaScript", harga: 120000, jumlah: 5, kategori: "Buku" },
+    { id: 4, nama: "Kursi Gaming", harga: 2500000, jumlah: 1, kategori: "Furniture" },
+    { id: 5, nama: "Meja Belajar", harga: 1800000, jumlah: 2, kategori: "Furniture" },
+  ];
+  
+  
+  const transaksiMapped = transaksi.map(transaksi => transaksi.harga * transaksi.jumlah)
+  console.log(transaksiMapped)
+
+  const transaksiFilter = transaksi.filter(transaksi => (transaksi.harga * transaksi.jumlah) > 2000000)
+  console.log(transaksiFilter)
+
+  const totalTransaksi = transaksi.reduce((acc, transaksi) => acc + transaksi.harga * transaksi.jumlah, 0)
+  console.log(`Rp ${totalTransaksi}`)
+
+  const sortTransaksi = [...transaksi].sort((a, b) => (b.harga * b.jumlah) - (a.harga * a.jumlah))
+
+  console.log(sortTransaksi)
