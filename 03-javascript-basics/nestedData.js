@@ -5,9 +5,15 @@ let kelas = [
 const cariNama = kelas.map(({ name}) => name)
 console.log(cariNama.join(", "))
 
-const mahasiswaTwentyPlus = kelas.filter((kelas) => kelas.age > 20)
+const mahasiswaTwentyPlus = kelas.filter((mahasiswa) => mahasiswa.age > 20)
 console.log(mahasiswaTwentyPlus)
 
+const rataRataNilai = kelas.map(mahasiswa => {
+    const total = mahasiswa.nilai.reduce((acc, n) => acc + n, 0)
+    const rataRata = total / mahasiswa.nilai.length;
+    return {name: mahasiswa.name, rataRata: rataRata}
+})
+console.log(rataRataNilai)
 
-const findScore = kelas.map(({nilai}) => nilai)
-console.log()
+const sortAge = [...kelas].sort((a, b) => a.age - b.age)
+console.log(sortAge)
