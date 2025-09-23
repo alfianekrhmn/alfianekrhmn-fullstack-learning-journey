@@ -16,9 +16,54 @@ let mahasigma = {
     age: 32
 }
 
-const {name, age} = mahasigma
-console.log(name, age)
+const {name: studentName, age: studentAge} = mahasigma
+console.log(studentName, studentAge)
 
 let firstHobbies = ["Sleep", "Sleep", "Sleep", "Sleep"]
 let secondHobbies = ["Running", "Running", "Running", "Running", ...firstHobbies]
 console.log(secondHobbies)
+
+function makan(callback){
+    console.log("Sedang makan...")
+    callback()
+}
+
+function minum() {
+    console.log("Lanjut minum setelah makan")
+}
+
+makan(minum)
+
+const loadData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Data loaded")
+    }, 2000)
+})
+
+loadData
+    .then((result) => {
+        console.log(result)
+    })
+    .catch((error) => {
+        console.log("Error : ", error)
+    })
+
+
+const loadingData = () => {
+    return new Promise((resolved, ejected) => {
+        setTimeout(() => {
+            resolved("data still loading")
+        }, 2000)
+    })
+}
+
+async function getData() {
+    try {
+        const result = await loadingData()
+        console.log(result)
+    } catch (error) {
+        console.log("Error: ", error)
+    }
+}
+
+getData()
