@@ -64,4 +64,4 @@ let timer = {
         }, 2000)
     }
 }
-console.log(timer.start())
+timer.start()
