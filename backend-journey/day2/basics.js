@@ -51,3 +51,9 @@ console.log(`Still learn Backend skill: ${myProfile.isLearningBackend}`)
 console.log(`My backend skills: ${myBackendSkills.join(", ")}`)
 console.log(`My future is ${myProfile.myFuture}`)
 console.log(`I wanna living at ${myProfile.myDream}`)
+
+if(isBackendDev){
+    console.log(`Keep going, ${myProfile.name}`)
+}else{
+    console.log(`Nice! You've mastered backend skills already`)
+}
