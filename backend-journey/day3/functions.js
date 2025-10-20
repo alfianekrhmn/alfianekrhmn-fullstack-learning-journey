@@ -31,8 +31,6 @@ console.log(getGoal("Fullstack Developer", "Singapore"))
 
 console.log("=======================================================")
 
-const motivateDeveloper = (name) => {
-    return `keep going ${name}! Every line of code makes you stronger`
-}
+const motivateDeveloper = (name) => {return `keep going ${name}! Every line of code makes you stronger`}
 
 console.log(motivateDeveloper("Alfian"))
