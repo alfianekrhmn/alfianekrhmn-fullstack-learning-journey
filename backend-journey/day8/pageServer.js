@@ -25,7 +25,6 @@ const renderPages = (req, res) => {
                     contentType = 'text/html';
                     break;
             }
-            res.writeHead(200, { 'Content-Type': contentType });
             res.end(data);
         }
     })
