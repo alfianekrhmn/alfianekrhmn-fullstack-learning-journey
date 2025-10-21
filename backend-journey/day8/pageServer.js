@@ -15,18 +15,13 @@ const renderPages = (req, res) => {
     const absolutePath = path.join(__dirname, filePath)
     fs.readFile(absolutePath, (err, data) => {
         if(err){
+            res.writeHead(404, { 'Content-Type': 'text/html' })
             res.end('404 Not Found')
         }else {
             let contentType = 'text/html'
             const ext = path.extname(absolutePath)
             switch(ext){
-                case 'index.html':
-                    contentType = 'text/html';
-                    break;
-                case 'about.html':
-                    contentType = 'text/html';
-                    break;
-                case 'contact.html':
+                case '.html':
                     contentType = 'text/html';
                     break;
             }
