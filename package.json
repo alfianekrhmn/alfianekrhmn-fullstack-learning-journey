@@ -1,0 +1,23 @@
+{
+  "name": "alfianekrhmn-fullstack-learning-journey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfianekrhmn/alfianekrhmn-fullstack-learning-journey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfianekrhmn/alfianekrhmn-fullstack-learning-journey/issues"
+  },
+  "homepage": "https://github.com/alfianekrhmn/alfianekrhmn-fullstack-learning-journey#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
