@@ -1,6 +1,5 @@
 let express = require('express')
 let app = express()
-const router = express.Router()
 const path = require('path');
 let PORT = 4000
 
