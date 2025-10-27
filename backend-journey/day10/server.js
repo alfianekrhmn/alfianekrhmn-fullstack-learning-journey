@@ -9,11 +9,11 @@ app.use((req, res, next) => {
 })
 app.use(express.static('public'))
 
-app.use('/about', router, (req, res) => {
+app.use('/about', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'about.html'))
 })
 
-app.use('/admin', router, (req, res) => {
+app.use('/admin', (req, res) => {
     res.end(`Access denied!`)
 })
 
