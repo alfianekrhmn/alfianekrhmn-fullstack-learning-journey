@@ -19,10 +19,10 @@ app.get('/user/:fullname', (req, res) => {
 })
 
 app.get('/product/:id', (req, res) => {
-    if(parseInt(req.params.id, 10)){
-        res.send(`Product ID : ${req.params.id}`)
-    }else{
+    if(isNaN(req.params.id)){
         res.send(`Invalid ID`)
+    }else{
+        res.send(`Product ID : ${req.params.id}`)
     }
 })
 
